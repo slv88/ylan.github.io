@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(22, 22, 22);
+  margin: 0px;
+}
+
+#container {
+  background-color: rgb(17, 17, 17);
+  width: 951.5px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+/*<----HEADER---->*/
+.owner {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Calibri";
+  color: azure;
+  font-size: 50px;
+  height: 60px;
+  padding: 20px 20px 70px;
+}
+/*<----NAVIGATION SECTION---->*/
+#container .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .availability .dot{
+  display: inline-block;
+  background-color: azure;
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  animation: 2s animationToggle infinite;
+}
+@keyframes animationToggle{
+  0%, 100%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+.navbar strong{
+  margin: 10px;
+}
+.navbar a {
+  font-size: 16px;
+  padding: 10px 20px;
+  font-family: "Calibri";
+  color: azure;
+  text-decoration: none;
+}
+.navbar ul li ul a {
+  background-color: rgb(63, 63, 63);
+}
+.navbar a:hover {
+  background-color: gray;
+}
+.navbar ul {
+  float: left;
+  padding: 0px;
+}
+.navbar ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+.navbar ul li a {
+  display: block;
+}
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+.navbar ul li:hover ul {
+  display: block;
+}
+/*<----ARTICLE---->*/
+.entry {
+  padding: 40px 20px 0px 20px;
+  color: azure;
+}
+
+.portfolio-introduction {
+  margin: 100px 0px 60px;
+}
+.portfolio-introduction strong{
+  font-size: 20px;
+}
+
+#container .entry .projects-type {
+  display: flex;
+  justify-content: center;
+  font-family: "Calibri";
+  color: azure;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.portfolio-projects{
+  margin-top: 25px;
+}
+.portfolio-projects .projects-section{
+  margin: 40px 0px;
+}
+.portfolio-projects img {
+  width: 100%;
+  margin: 25px 0px 5px;
+  overflow: hidden;
+}
+.portfolio-projects .project-name {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0px;
+}
+.portfolio-projects .project-name p{
+  font-size: 22px;
+}
+/*PROJECT PAGE*/
+#container .entry .project-title {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px 10px 0px;
+  font-size: 30px;
+  width: 100%;
+}
+
+#container .entry .project-informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Calibri";
+}
+.entry .project-informations table {
+  margin: 10px;
+}
+.entry .project-informations .row-data {
+  font-size: 17px;
+  padding: 10px;
+}
+#container .entry .project-button {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: grey;
+  font-family: "Calibri";
+}
+#container .entry .project-button:visited {
+  color: aliceblue;
+}
+.text-block strong{
+  font-size: 30px;
+}
+
+.entry .mobile-project-content{
+  margin: 80px 0px;
+}
+.entry .mobile-project-content p {
+  margin-right: 0px;
+  font-size: 20px;
+  width: 90%;
+}
+.entry .mobile-project-content img {
+  height: 25%;
+  width: 25%;
+}
+
+.mobile-project-introduction {
+  display: flex;
+  margin-top: 100px;
+}
+.mobile-project-part1 {
+  display: flex;
+  margin-top: 100px;
+}
+.mobile-project-part2 {
+  display: flex;
+  margin-top: 100px;
+}
+.mobile-project-conclusion {
+  display: flex;
+  margin-top: 100px;
+}
+
+.entry .desktop-project-content{
+  margin: 80px 0px;
+}
+.entry .desktop-project-content p {
+  margin-right: 0px;
+  font-size: 20px;
+  width: 90%;
+}
+.entry .desktop-project-content img {
+  height: 90%;
+  width: 90%;
+  margin: 30px 0px;
+}
+
+.desktop-project-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.desktop-project-part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.desktop-project-part2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.desktop-project-conclusion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.designs-introduction{
+  margin: 100px 0px 60px;
+}
+.designs-introduction strong{
+  font-size: 20px;
+}
+.design-projects strong{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  font-size: 30px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+.gallery img {
+  width: 100%;
+}
+/*<----FOOTER---->*/
+.Copyright {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+  font-family: "Calibri";
+  margin-top: 15px;
+}
+/*<-------->*/
+p {
+  font-size: 19px;
+  font-family: "Calibri";
+  color: azure;
+}
+strong {
+  font-family: "Calibri";
+  color: azure;
+}
+/*<----CROSS PLATFORMS--->*/
+ @media screen and (max-width: 951.5px) {
+  #container {
+    max-width: 100%;
+    background-color: rgb(17, 17, 17);
+  }
+
+  .owner {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 40px;
+  }
+
+  .mobile-project-introduction {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .mobile-project-part1{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .mobile-project-part2{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .entry .mobile-project-content p {
+    width: 100%;
+    margin-right: 0px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .entry .mobile-project-content strong {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+  }
+  .entry .mobile-project-content img {
+    height: 60%;
+    width: 60%;
+  }
+  .entry .desktop-project-content P{
+    width: 100%;
+    margin-right: 0px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .entry .desktop-project-content img {
+    height: 100%;
+    width: 100%;
+  }
+} 
